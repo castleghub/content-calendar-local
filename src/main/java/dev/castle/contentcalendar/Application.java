@@ -12,9 +12,7 @@ import org.springframework.web.client.RestTemplate;
 public class Application {
 
 	public static void main(String[] args) {
-	ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
-	RestTemplate restTemplate = (RestTemplate) context.getBean("restTemplate");
-		System.out.println(restTemplate);
+	SpringApplication.run(Application.class, args);
 	}
 
 	@Profile("dev")

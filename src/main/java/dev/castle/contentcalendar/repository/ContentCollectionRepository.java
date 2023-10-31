@@ -24,6 +24,7 @@ public class ContentCollectionRepository {
     }
 
     public Optional<Content> findById (Integer id){
+
         return contentList.stream().filter(c -> c.id().equals(id)).findFirst();
 
     }
