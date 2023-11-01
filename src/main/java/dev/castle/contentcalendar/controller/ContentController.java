@@ -16,7 +16,9 @@ import java.util.Optional;
 @CrossOrigin
 public class ContentController {
 
-    // private final ContentCollectionRepository repository; // Para datos en memory y H2.
+    /* CRUD del Array, contentList */
+    // private final ContentCollectionRepository repository;
+
     private final ContentRepository repository;
 
     public ContentController(ContentRepository repository) {
